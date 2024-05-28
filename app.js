@@ -443,20 +443,102 @@
 // }
 
 
-let a = 11;
-let b = 16;
-let c =8;
-if(a>b){
-    if(a>c) {
-        console.log("a is largest");
-    }
-}
+//Find the largest number among 3 numbers.
 
-else {
-    if(b>c) {
-        console.log("b is largest");
-    }
-    else {
-        console.log("c is largest");
-    }
-}
+// let a = 11;
+// let b = 16;
+// let c =8;
+// if(a>b){
+//     if(a>c) {
+//         console.log("a is largest");
+//     }
+// }
+
+// else {
+//     if(b>c) {
+//         console.log("b is largest");
+//     }
+//     else {
+//         console.log("c is largest");
+//     }
+// }
+
+
+
+//Ternary Operator
+
+// let age = prompt("enter your age:");
+// let result = (age>=18)? "Can vote" : "Cannot vote";
+// console.log(result);
+
+
+//Bitwise Operator - works on bits
+// console.log(2|3);  //or operator'
+// console.log(2&3);//and operator
+
+//Object in JS ---> define property and behaviour 
+// let rectangle = {
+//     length:1,
+//     breadth:3,
+//     draw : function draw() {
+//         console.log('drawing rectangle');
+//     }
+// }
+
+
+// let student = {
+//     name: 'Vaishnavi Raj',
+//     registerId: '02',
+//     salary:150000,
+//     data : function data() {
+//         console.log('data of an student');
+//     }
+
+// }
+
+
+//Object Creation
+
+// 1-Factory function --> camelCase ,request & return
+
+// function createRectangle() {
+//     let rectangle = {
+//     length:1,
+//     breadth:3,
+//     draw : function draw() {
+//         console.log('drawing rectangle');
+//     }
+
+// }
+// return rectangle;
+
+// }
+
+//Object creation in factory function
+// let rectangleObj1 = createRectangle();
+// console.log(rectangleObj1);
+
+
+// 2-Constructor function-->PascalNotation ,only request means property/methods initialise and define.
+
+// function Rectangle() {
+//     this.length=1; //this implies current object
+//     this.breadth=2;
+//     this.draw=function draw() {
+//         console.log('drawing rectangle');
+//     }
+// }
+
+//Object creation using constructor function
+
+// let rectangleObject = new Rectangle(); //new gives empty object
+//console.log(rectangleObject);
+
+//Dynamic nature of object 
+//we can add and delete Both. 
+
+// rectangleObject.color ='yellow'; //adding
+// delete rectangleObject.color; //deleting
+// console.log(rectangleObject);
+
+//Note-function is also an object
