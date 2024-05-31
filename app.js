@@ -521,7 +521,7 @@
 
 // 2-Constructor function-->PascalNotation ,only request means property/methods initialise and define.
 
-// function Rectangle() {
+//function Rectangle() {
 //     this.length=1; //this implies current object
 //     this.breadth=2;
 //     this.draw=function draw() {
@@ -531,7 +531,7 @@
 
 //Object creation using constructor function
 
-// let rectangleObject = new Rectangle(); //new gives empty object
+//let rectangleObject = new Rectangle(); //new gives empty object
 //console.log(rectangleObject);
 
 //Dynamic nature of object 
@@ -542,3 +542,38 @@
 // console.log(rectangleObject);
 
 //Note-function is also an object
+
+//Constructor Property
+//rectangleObject.constructor;    ---->jot down on consolewindow.
+
+
+
+//constructor of constructor
+
+
+
+function DrawSquare(side1,side2){
+    this.side1=23;
+    this.side2=23;
+    draw : function draw(){
+        console.log("drawing square");
+    }
+}
+
+//Object creation
+let SquareObj1 = new DrawSquare(23,23);
+console.log(SquareObj1);
+
+//we know DrawSquare is the constructor of SquareObj1 but what 
+//about the constructor of DrawSquare---this is how we can find DrawSquareConstrtor.
+
+// let Squa = new Function ('side1','side2',
+//     ` this.side1=side1;
+//     this.side2=side2;
+//     draw : function draw(){
+//         console.log("drawing square");
+//     }`
+// )
+
+// let SquaObj1 = new Squa(45,45);
+// console.log(SquaObj1);
