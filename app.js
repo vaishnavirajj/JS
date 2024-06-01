@@ -552,17 +552,17 @@
 
 
 
-function DrawSquare(side1,side2){
-    this.side1=23;
-    this.side2=23;
-    draw : function draw(){
-        console.log("drawing square");
-    }
-}
+// function DrawSquare(side1,side2){
+//     this.side1=23;
+//     this.side2=23;
+//     draw : function draw(){
+//         console.log("drawing square");
+//     }
+// }
 
 //Object creation
-let SquareObj1 = new DrawSquare(23,23);
-console.log(SquareObj1);
+// let SquareObj1 = new DrawSquare(23,23);
+// console.log(SquareObj1);
 
 //we know DrawSquare is the constructor of SquareObj1 but what 
 //about the constructor of DrawSquare---this is how we can find DrawSquareConstrtor.
@@ -577,3 +577,29 @@ console.log(SquareObj1);
 
 // let SquaObj1 = new Squa(45,45);
 // console.log(SquaObj1);
+
+
+//Difference between Primitive(value type) vs Reference type
+//  let a = 10;
+//  let b = a;
+//  a++;
+//  console.log(a); 
+//  console.log(b); 
+
+//Note - In Primitive types copies are passed 
+
+// let a = {value : 10};
+// let b = a;
+// a.value++;
+// console.log(a.value);
+// console.log(b.value);
+
+//Note - In Reference Types addresses or references are passed.
+
+let a = {value : 20};
+function fn () {
+    a.value++;
+}
+fn(a);
+console.log(a.value);
+
