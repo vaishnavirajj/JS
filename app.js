@@ -596,10 +596,55 @@
 
 //Note - In Reference Types addresses or references are passed.
 
-let a = {value : 20};
-function fn () {
-    a.value++;
-}
-fn(a);
-console.log(a.value);
+// let a = 10;
+// function inc (a) {
+//     a++;
+// }
+// inc(a);
+// console.log(a); //output 10  
 
+// let a = {value : 20};
+// function fn () {
+//     a.value++;
+// }
+// fn(a);
+// console.log(a.value);  //Output 21
+
+//Iterating through Object
+// 1-for in 
+//  let rectangle = {
+//     length : 2,
+//     breadth : 4
+//  };
+
+ //looping
+//  for (let key in rectangle) {
+//     console.log(key, rectangle[key]);
+//  }
+
+//  Note- 1) Keys are reflected through key variable.
+// 2) values are reflected through rectangle[key]. 
+
+// 2-for of ->> only used for iterables i.e, arrays & maps.
+
+// let rectangle = {
+//     length :2 ,
+//     breadth :4,
+
+//  };
+
+// for (let key of rectangle) {
+//     console.log(key);
+// }
+
+//error occured -> rectangles are not iterables.
+
+//Hack
+// for (let key of Object.keys(rectangle)) {
+//     console.log(key);
+//     console.log(Object.entries(rectangle));
+// }
+// Note-Object.keys(rectangle) reflect keys and Object.entries(rectangle) will reflect key value pair.
+
+
+//Garbage Collection
