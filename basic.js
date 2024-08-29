@@ -1,27 +1,19 @@
-//Adding new element
+//creation of object
+//ek particular thing k saara data sath me store krne k liye object use krte h
+//bhut saara alg alg data ek jagah store krne k liye array use krte h
+var obj= {};
+var obj2=new Object();
 
-//let num =[1,4,5,7];
-// console.log(num);
-// num[4]=8;
-// console.log(num);
+var myInfo= {
+    name:"shelley",
+    age:20,
+    uni:"lpu",
+    skills:"DsaAndFrontend",
+};
+console.log(myInfo.name);
 
-//Insertion
-// Three ways to insert 
-//1- End
-// num.push(9);
-// console.log(num);
-// 2-Begin
-// num.upshift(6);
-// console.log(num);
-// 3-Middle
-// num.splice(10);
-// console.log(num);
+//synchronous-->code line by line chalti h aur iska code main stack me chalta hai
+//asynchronous--->saara code ek sath chalta h aur jiska processing time kam hota h wo phele complete ho jata h aur ye side stack me chalta hai
 
 
-//how to loop an array
-var arr=[1,2,3,4,5];
-
-arr.forEach(function(val){
-    console.log(val);
-});
 
