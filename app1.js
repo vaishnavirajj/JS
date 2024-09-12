@@ -80,3 +80,15 @@ let name = "Shelley";
 console.log(name.slice(0));
 console.log(name.slice(0,4));
 console.log(name.slice(-3));
+
+//string concatenation
+// str1.concat(str2);
+
+//string replace
+// str.replace(searchVal , newVal);
+
+// To know the value of wanted index
+// str.charAt(idx);
+
+
+

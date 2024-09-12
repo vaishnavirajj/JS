@@ -647,4 +647,58 @@
 // Note-Object.keys(rectangle) reflect keys and Object.entries(rectangle) will reflect key value pair.
 
 
-//Garbage Collection
+// Note:-Object.keys(rectangle) reflect keys and Object.entries(recatngle) will refelct key value pair 
+
+//To know any property exist in object:-
+
+// if ('color' in rectangle) {
+//     console.log('present');
+// }
+// else {
+//     console.log('absent');
+// }
+
+//Object Cloning
+// 1-Iteration 
+// Clone1
+// let src = {value:10};
+// let dest={};
+// for (let key in src) {
+//     dest[key]=src[key];
+// }
+
+// console.log(Object.entries(src));
+// console.log(Object.entries(dest));
+
+//Clone2
+// let src={
+//     a:10,
+//     b:20,
+//     c:30
+// };
+// let dest={};
+// for (let key in src) {
+//     dest[key]=src[key];
+// }
+// console.log(Object.entries(src));
+// console.log(Object.entries(dest));
+
+
+
+//2-Assign
+
+let src = { 
+    a:23,
+    b:43,
+    c:32
+};
+//let dest = Object.assign({},src);
+// console.log(Object.entries(src));
+// console.log(Object.entries(dest));
+
+
+
+// 3-Spread 
+
+let dest={...src};
+console.log(dest);
